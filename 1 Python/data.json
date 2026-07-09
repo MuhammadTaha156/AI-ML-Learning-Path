@@ -1,0 +1,9 @@
+{
+    "name":"Taha",
+    "isTeacher":true,
+    "address":{
+        "city":"karachi",
+        "country":"Pakistan"
+    },
+    "subject":["python","Ai/Ml"]
+}
