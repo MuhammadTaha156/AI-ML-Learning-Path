@@ -155,3 +155,85 @@ To make it mathematically easier for Gradient Descent, we combine the piecewise 
 $$J(\hat{y}, y) = -y \cdot \log(\hat{y}) - (1 - y) \cdot \log(1 - \hat{y})$$
 
 *(Note: $\hat{y}$ is the predicted probability $h_\theta(x)$, and $y$ is the actual label which is strictly 0 or 1).*
+
+## 4. Transforming Data (Scaling)
+Scaling helps the gradient descent algorithm **converge faster**.
+
+### Normalization (Min-Max Scaling)
+Rescales the data to a specific range, usually $(0, 1)$.
+$$X_{scaled} = \frac{x - x_{min}}{x_{max} - x_{min}}$$
+
+### Standardization (Z-score Scaling)
+Centers the data around a mean ($\mu$) of 0 and a standard deviation ($\sigma$) of 1.
+$$X_{standardized} = \frac{x - \mu}{\sigma}$$
+
+---
+
+## 5. Standardizing Data in Python (Scikit-Learn)
+When using `StandardScaler` to prevent **Data Leakage**, you must treat training and testing data differently:
+* **`fit()`**: Computes the mean ($\mu$) and standard deviation ($\sigma$).
+* **`fit_transform()`**: Fits to the data and then transforms it. **(Apply ONLY to `X_train`)**
+* **`transform()`**: Uses the mean and standard deviation computed by the `fit` step. **(Apply to `X_test`)**
+
+---
+
+## 6. Evaluation Metrics for Classification
+
+### The Confusion Matrix
+For binary classification, this is a $2 \times 2$ matrix comparing Actual values to Predicted values. (For n-classification, it is an $n \times n$ matrix).
+
+| | Predicted 0 (Negative) | Predicted 1 (Positive) |
+| :--- | :--- | :--- |
+| **Actual 0 (Negative)** | **TN** (True Negative) | **FP** (False Positive) $\rightarrow$ *Type 1 Error* |
+| **Actual 1 (Positive)** | **FN** (False Negative) $\rightarrow$ *Type 2 Error* | **TP** (True Positive) |
+
+* **Type 1 Error (FP) is costly in:** Plagiarism detection, Spam detection.
+* **Type 2 Error (FN) is costly in:** Medical diagnosis, Manufacturing defects.
+
+### Metric Formulas
+* **Accuracy:** How often is the model correct overall?
+    $$\text{Accuracy} = \frac{TN + TP}{TN + FP + FN + TP}$$
+* **Precision:** When the model predicts positive, how often is it correct?
+    $$\text{Precision} = \frac{TP}{TP + FP}$$
+* **Recall (Sensitivity):** How many actual positives did it catch?
+    $$\text{Recall} = \frac{TP}{FN + TP}$$
+* **F1 Score:** The harmonic mean of Precision and Recall.
+    $$\text{F1 Score} = \frac{2 \times \text{Precision} \times \text{Recall}}{\text{Precision} + \text{Recall}}$$
+
+---
+
+## 7. Implementation: Logistic Regression Code
+Here is a consolidated workflow based on the Jupyter Notebook for training and evaluating a Logistic Regression model using Scikit-Learn.
+
+```python
+import pandas as pd
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LogisticRegression
+from sklearn.preprocessing import StandardScaler
+from sklearn.metrics import confusion_matrix, classification_report, accuracy_score, precision_score
+
+# 1. Load Data
+df = pd.read_csv("heart.csv")
+X = df.drop("target", axis=1)
+y = df["target"]
+
+# 2. Split Data
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+
+# 3. Scale Data (Prevent Data Leakage)
+scaler = StandardScaler()
+X_train = scaler.fit_transform(X_train)
+X_test = scaler.transform(X_test)
+
+# 4. Train Model
+model = LogisticRegression(max_iter=1500)
+model.fit(X_train, y_train)
+
+# 5. Predict & Evaluate
+y_pred = model.predict(X_test)
+
+print("Confusion Matrix:\n", confusion_matrix(y_test, y_pred))
+print("\nClassification Report:\n", classification_report(y_test, y_pred))
+print(f"Accuracy: {accuracy_score(y_test, y_pred) * 100:.2f}%")
+print(f"Precision: {precision_score(y_test, y_pred) * 100:.2f}%")
+```
