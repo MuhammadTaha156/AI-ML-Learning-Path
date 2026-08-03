@@ -1,0 +1,456 @@
+<!doctype html>
+<html lang="en">
+ <head><script>window["__codeletBootstrap__"]=JSON.parse('{"A":"A","B":"20260731-05-8d4b1dd","C":{"Abril Fatface":"YACgEZbkUVE,0","Alfa Slab One":"YACgEYS9sJU,0","Anton":"YACgEcYqQ-A,0","Archivo":"YAHO2-t-jNE,0","Arial":"YAGyDvJ_4Ts,0","Bebas Neue":"YACgESME5ew,0","Broken Glyph":"YADZ-exUkv0,0","Canva Sans":"YAFdJjTk5UU,0","Caveat":"YALBs2ploWQ,0","Comic Sans MS":"YAHO2VMiyZo,0","Cormorant Garamond":"YAFdJhX-538,0","Courier New":"YAGzXiGs0_8,0","DM Sans":"YAD1aU3sLnI,0","DM Serif Display":"YAD1aYG82rc,0","Forum":"YACgEcnnqB4,0","Fraunces":"YAEul-FRQw4,0","Georgia":"YAGzXkO0pEM,0","Ghost Mono":"YAHO2EIdDP0,0","Helvetica Neue":"YAFcf6CtJfI,0","Impact":"YAFcfnjI7Vk,0","Inter":"YAFdJvSyp_k,3","Iowan Old Style":"YAGNIFa8j9o,0","Jacques Francois":"YAHO2a5g66Q,0","JetBrains Mono":"YADy3sAhvXQ,0","Oleo Script":"YACgEQQ14jI,0","Playfair Display":"YAFdJhem5V8,1","Poppins":"YAE5fPSY9qM,0","Press Start 2P":"YAFyGr-8pmQ,0","Source Sans 3":"YAG4lO1Mj10,0","Space Grotesk":"YAHO2sjPCSM,0","Times New Roman":"YAGzXW3gftg,0","Times":"YAGzXW3gftg,0","Trebuchet MS":"YAFcfrglpVA,0","Verdana":"YAGzXTctYtQ,0","Work Sans":"YAGXhLOKv44,0","Yellowtail":"YACgEYG4kG4,0"}}');</script><script src="/_sdk/1c274b9c2bdd3519.telemetry_sdk.js" integrity="sha512-QvDGWM2/VIwB7KXA4cwqkIBlxCdJGd0uO9ksM8wsqNKNiFgewrwdYlGY9ioCTg42Djm5Sw7uha/WH60UzzKOhQ=="></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AWS Student Community Day Haripur</title>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            aws: { blue: '#2196F3', dark: '#232F3E', light: '#64B5F6' },
+            surface: { bg: '#0D1117', card: '#161B22', border: '#21262D' }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { font-family: 'DM Sans', sans-serif; }
+    .glass { background: rgba(22,27,34,0.7); backdrop-filter: blur(12px); border: 1px solid rgba(255,255,255,0.05); }
+    .fade-in { opacity: 0; transform: translateY(30px); transition: opacity 0.6s, transform 0.6s; }
+    .fade-in.visible { opacity: 1; transform: translateY(0); }
+    .nav-solid { background: rgba(13,17,23,0.95) !important; backdrop-filter: blur(12px); }
+    @keyframes float { 0%,100%{ transform: translateY(0); } 50%{ transform: translateY(-15px); } }
+    .float-anim { animation: float 4s ease-in-out infinite; }
+    .timeline-dot { width:12px; height:12px; background:#2196F3; border-radius:50%; position:absolute; left:-6px; top:6px; }
+    .accordion-content { max-height:0; overflow:hidden; transition: max-height 0.3s ease; }
+    .accordion-content.open { max-height: 300px; }
+    @keyframes pulse-glow { 0%,100%{ box-shadow: 0 0 20px rgba(33,150,243,0.3); } 50%{ box-shadow: 0 0 40px rgba(33,150,243,0.6); } }
+    .logo-glow { animation: pulse-glow 3s ease-in-out infinite; }
+    @keyframes drift { 0%{ transform: translate(0,0); } 25%{ transform: translate(10px,-10px); } 50%{ transform: translate(-5px,15px); } 75%{ transform: translate(-15px,-5px); } 100%{ transform: translate(0,0); } }
+    .particle { position:absolute; border-radius:50%; opacity:0.15; animation: drift 8s ease-in-out infinite; }
+  </style>
+  <script src="/_sdk/63b5ed99e5b990a7.data_sdk.js" type="text/javascript" integrity="sha512-fLUGE0rNLPgXS9olxs6QORKg6Diqpi0PSKoNistdAaH/GruBuq5/XhrOdSOcKfqcIIRQ1KvO66J1vCBvvLj4rA=="></script>
+  <script src="/_sdk/797e0a7e8af7c7f8.resizing_sdk.js" type="text/javascript" integrity="sha512-giNZj5eBnASPpYcJXEVOn6FguxFDnaH+gnf5nbRfUgfRDqtOdV+5Dna/CwvXiPeR//Plhtbt32CML3VF4+oCLw=="></script>
+ </head>
+ <body data-template-id="__page-root" class="w-full min-h-screen text-gray-200">
+  <nav id="navbar" class="fixed top-0 left-0 w-full z-50 transition-all duration-300">
+   <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+    <div class="flex items-center gap-3"><img data-template-id="nav-aws-logo" class="canva-image w-10 h-10 rounded" loading="lazy"> <span data-template-id="nav-logo" class="canva-text font-bold text-lg text-white"></span>
+    </div><button id="mobile-menu-btn" class="md:hidden text-white" aria-label="Toggle menu"><i data-lucide="menu" style="width:24px;height:24px"></i></button>
+    <div id="nav-links" class="hidden md:flex items-center gap-6 text-sm">
+     <a href="#home" class="hover:text-aws-blue transition">Home</a> <a href="#about" class="hover:text-aws-blue transition">About</a> <a href="#agenda" class="hover:text-aws-blue transition">Agenda</a> <a href="#speakers" class="hover:text-aws-blue transition">Speakers</a> <a href="#partners" class="hover:text-aws-blue transition">Partners</a> <a href="#venue" class="hover:text-aws-blue transition">Venue</a> <a href="#faq" class="hover:text-aws-blue transition">FAQ</a> <a href="https://linktr.ee/_aitezaz" target="_blank" rel="noopener noreferrer" data-template-id="nav-register-btn" class="canva-button px-4 py-2 rounded-full font-medium transition hover:opacity-90"></a>
+    </div>
+   </div>
+   <div id="mobile-nav" class="hidden md:hidden glass mx-4 rounded-xl p-4 space-y-3 text-sm">
+    <a href="#home" class="block hover:text-aws-blue">Home</a> <a href="#about" class="block hover:text-aws-blue">About</a> <a href="#agenda" class="block hover:text-aws-blue">Agenda</a> <a href="#speakers" class="block hover:text-aws-blue">Speakers</a> <a href="#partners" class="block hover:text-aws-blue">Partners</a> <a href="#venue" class="block hover:text-aws-blue">Venue</a> <a href="#faq" class="block hover:text-aws-blue">FAQ</a> <a href="https://linktr.ee/_aitezaz" target="_blank" rel="noopener noreferrer" class="block text-aws-blue font-medium">Register</a>
+   </div>
+  </nav>
+  <section id="home" class="relative w-full overflow-hidden" style="min-height:calc(100 * min(var(--vh,1vh),1vh))">
+   <div class="absolute inset-0 z-0">
+    <img data-template-id="hero-bg" class="canva-image w-full h-full object-cover opacity-20" loading="lazy">
+    <div class="absolute inset-0 bg-gradient-to-b from-surface-bg/40 via-surface-bg/80 to-surface-bg"></div>
+   </div>
+   <div class="particle w-3 h-3 bg-aws-blue top-[15%] left-[10%]" style="animation-delay:0s"></div>
+   <div class="particle w-5 h-5 bg-aws-light top-[25%] right-[15%]" style="animation-delay:2s"></div>
+   <div class="particle w-4 h-4 bg-aws-blue top-[60%] left-[20%]" style="animation-delay:4s"></div>
+   <div class="particle w-6 h-6 bg-aws-light top-[70%] right-[25%]" style="animation-delay:1s"></div>
+   <div class="particle w-2 h-2 bg-aws-blue top-[40%] left-[70%]" style="animation-delay:3s"></div>
+   <div class="particle w-4 h-4 bg-aws-light top-[80%] left-[50%]" style="animation-delay:5s"></div>
+   <div class="relative z-10 flex flex-col items-center justify-center text-center px-4 pt-28 pb-20" style="min-height:calc(100 * min(var(--vh,1vh),1vh))">
+    <img data-template-id="hero-event-logo" class="canva-image w-full max-w-md rounded-2xl shadow-2xl logo-glow mb-8" loading="lazy">
+    <h1 data-template-id="hero-title" class="canva-text font-bold text-4xl md:text-6xl max-w-4xl leading-tight"></h1>
+    <p data-template-id="hero-tagline" class="canva-text text-xl md:text-2xl mt-4 font-medium"></p>
+    <p data-template-id="hero-desc" class="canva-text mt-6 max-w-2xl text-gray-400 text-lg"></p>
+    <div class="flex flex-wrap justify-center gap-6 mt-8 text-sm text-gray-300">
+     <span data-template-id="hero-date" class="canva-text"></span> <span data-template-id="hero-time" class="canva-text"></span> <span data-template-id="hero-location" class="canva-text"></span>
+    </div>
+    <div id="countdown" class="flex gap-4 mt-8 text-center">
+     <div class="glass rounded-xl px-4 py-3">
+      <span id="cd-days" class="text-2xl font-bold text-aws-blue">00</span>
+      <p class="text-xs text-gray-400 mt-1">Days</p>
+     </div>
+     <div class="glass rounded-xl px-4 py-3">
+      <span id="cd-hours" class="text-2xl font-bold text-aws-blue">00</span>
+      <p class="text-xs text-gray-400 mt-1">Hours</p>
+     </div>
+     <div class="glass rounded-xl px-4 py-3">
+      <span id="cd-mins" class="text-2xl font-bold text-aws-blue">00</span>
+      <p class="text-xs text-gray-400 mt-1">Minutes</p>
+     </div>
+     <div class="glass rounded-xl px-4 py-3">
+      <span id="cd-secs" class="text-2xl font-bold text-aws-blue">00</span>
+      <p class="text-xs text-gray-400 mt-1">Seconds</p>
+     </div>
+    </div>
+    <div class="flex gap-4 mt-10">
+     <a href="https://linktr.ee/_aitezaz" target="_blank" rel="noopener noreferrer" data-template-id="hero-cta" class="canva-button px-8 py-3 rounded-full font-semibold text-lg transition hover:scale-105"></a> <a href="#agenda" data-template-id="hero-secondary" class="canva-button px-8 py-3 rounded-full font-semibold text-lg border border-gray-600 transition hover:border-aws-blue hover:text-aws-blue"></a>
+    </div>
+   </div>
+  </section>
+  <section class="w-full py-20 px-4">
+   <div class="max-w-5xl mx-auto text-center fade-in">
+    <h2 data-template-id="organized-title" class="canva-text font-bold mb-10"></h2>
+    <div class="glass rounded-3xl border border-aws-blue/20 p-8 md:p-10">
+     <div class="flex flex-col items-center justify-center">
+      <img data-template-id="organizer-logo" class="canva-image w-64 h-auto" loading="lazy">
+     </div>
+     <p data-template-id="organized-name" class="canva-text font-semibold text-xl mt-8"></p>
+     <div class="flex justify-center gap-5 mt-6">
+      <a href="https://linkedin.com/company/canva-student-community-uoh" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-aws-blue transition" aria-label="LinkedIn"><i data-lucide="linkedin" style="width:24px;height:24px"></i></a> <a href="https://www.instagram.com/canvastudentcommunityuoh?igsh=MXg5cThhNTI4cmw1aw==" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-aws-blue transition" aria-label="Instagram"><i data-lucide="instagram" style="width:24px;height:24px"></i></a>
+     </div>
+    </div>
+   </div>
+  </section>
+  <section id="about" class="w-full py-24 px-4">
+   <div class="max-w-6xl mx-auto">
+    <h2 data-template-id="about-title" class="canva-text font-bold text-center fade-in"></h2>
+    <p data-template-id="about-desc" class="canva-text text-center mt-6 max-w-3xl mx-auto text-gray-400 fade-in"></p>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-16">
+     <div data-template-id="about-card-1" class="canva-card glass rounded-2xl p-6 text-center fade-in hover:border-aws-blue/30 transition">
+      <div class="w-14 h-14 mx-auto rounded-xl bg-aws-blue/10 flex items-center justify-center mb-4">
+       <i data-lucide="cloud" style="width:28px;height:28px;color:#2196F3"></i>
+      </div>
+      <h3 data-template-id="about-card-1-title" class="canva-text font-semibold"></h3>
+     </div>
+     <div data-template-id="about-card-2" class="canva-card glass rounded-2xl p-6 text-center fade-in hover:border-aws-blue/30 transition">
+      <div class="w-14 h-14 mx-auto rounded-xl bg-aws-light/10 flex items-center justify-center mb-4">
+       <i data-lucide="brain" style="width:28px;height:28px;color:#64B5F6"></i>
+      </div>
+      <h3 data-template-id="about-card-2-title" class="canva-text font-semibold"></h3>
+     </div>
+     <div data-template-id="about-card-3" class="canva-card glass rounded-2xl p-6 text-center fade-in hover:border-aws-blue/30 transition">
+      <div class="w-14 h-14 mx-auto rounded-xl bg-aws-blue/10 flex items-center justify-center mb-4">
+       <i data-lucide="users" style="width:28px;height:28px;color:#2196F3"></i>
+      </div>
+      <h3 data-template-id="about-card-3-title" class="canva-text font-semibold"></h3>
+     </div>
+     <div data-template-id="about-card-4" class="canva-card glass rounded-2xl p-6 text-center fade-in hover:border-aws-blue/30 transition">
+      <div class="w-14 h-14 mx-auto rounded-xl bg-aws-light/10 flex items-center justify-center mb-4">
+       <i data-lucide="bot" style="width:28px;height:28px;color:#64B5F6"></i>
+      </div>
+      <h3 data-template-id="about-card-4-title" class="canva-text font-semibold"></h3>
+     </div>
+     <div data-template-id="about-card-5" class="canva-card glass rounded-2xl p-6 text-center fade-in hover:border-aws-blue/30 transition">
+      <div class="w-14 h-14 mx-auto rounded-xl bg-aws-blue/10 flex items-center justify-center mb-4">
+       <i data-lucide="link" style="width:28px;height:28px;color:#2196F3"></i>
+      </div>
+      <h3 data-template-id="about-card-5-title" class="canva-text font-semibold"></h3>
+     </div>
+     <div data-template-id="about-card-6" class="canva-card glass rounded-2xl p-6 text-center fade-in hover:border-aws-blue/30 transition">
+      <div class="w-14 h-14 mx-auto rounded-xl bg-aws-light/10 flex items-center justify-center mb-4">
+       <i data-lucide="rocket" style="width:28px;height:28px;color:#64B5F6"></i>
+      </div>
+      <h3 data-template-id="about-card-6-title" class="canva-text font-semibold"></h3>
+     </div>
+    </div>
+   </div>
+  </section>
+  <section class="w-full py-20 px-4">
+   <div class="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+    <div class="fade-in">
+     <span class="counter text-4xl font-bold text-aws-blue" data-target="200">0</span><span class="text-4xl font-bold text-aws-blue">+</span>
+     <p data-template-id="stat-1-label" class="canva-text mt-2 text-gray-400"></p>
+    </div>
+    <div class="fade-in">
+     <span class="counter text-4xl font-bold text-aws-blue" data-target="5">0</span><span class="text-4xl font-bold text-aws-blue">+</span>
+     <p data-template-id="stat-2-label" class="canva-text mt-2 text-gray-400"></p>
+    </div>
+    <div class="fade-in">
+     <span class="counter text-4xl font-bold text-aws-blue" data-target="10">0</span><span class="text-4xl font-bold text-aws-blue">+</span>
+     <p data-template-id="stat-3-label" class="canva-text mt-2 text-gray-400"></p>
+    </div>
+    <div class="fade-in">
+     <span class="counter text-4xl font-bold text-aws-blue" data-target="15">0</span><span class="text-4xl font-bold text-aws-blue">+</span>
+     <p data-template-id="stat-4-label" class="canva-text mt-2 text-gray-400"></p>
+    </div>
+   </div>
+  </section>
+  <section id="agenda" class="w-full py-24 px-4">
+   <div class="max-w-3xl mx-auto">
+    <h2 data-template-id="agenda-title" class="canva-text font-bold text-center fade-in"></h2>
+    <div class="mt-16 relative border-l-2 border-surface-border ml-4 space-y-8">
+     <div class="relative pl-8 fade-in">
+      <div class="timeline-dot"></div>
+      <p class="text-aws-blue font-medium text-sm">09:00 AM</p>
+      <h4 data-template-id="agenda-1" class="canva-text font-medium mt-1"></h4>
+     </div>
+     <div class="relative pl-8 fade-in">
+      <div class="timeline-dot"></div>
+      <p class="text-aws-blue font-medium text-sm">09:30 AM</p>
+      <h4 data-template-id="agenda-2" class="canva-text font-medium mt-1"></h4>
+     </div>
+     <div class="relative pl-8 fade-in">
+      <div class="timeline-dot"></div>
+      <p class="text-aws-blue font-medium text-sm">10:00 AM</p>
+      <h4 data-template-id="agenda-3" class="canva-text font-medium mt-1"></h4>
+     </div>
+     <div class="relative pl-8 fade-in">
+      <div class="timeline-dot"></div>
+      <p class="text-aws-blue font-medium text-sm">10:30 AM</p>
+      <h4 data-template-id="agenda-4" class="canva-text font-medium mt-1"></h4>
+     </div>
+     <div class="relative pl-8 fade-in">
+      <div class="timeline-dot"></div>
+      <p class="text-aws-blue font-medium text-sm">11:00 AM</p>
+      <h4 data-template-id="agenda-5" class="canva-text font-medium mt-1"></h4>
+     </div>
+     <div class="relative pl-8 fade-in">
+      <div class="timeline-dot"></div>
+      <p class="text-aws-blue font-medium text-sm">11:30 AM</p>
+      <h4 data-template-id="agenda-6" class="canva-text font-medium mt-1"></h4>
+     </div>
+     <div class="relative pl-8 fade-in">
+      <div class="timeline-dot"></div>
+      <p class="text-aws-blue font-medium text-sm">12:00 PM</p>
+      <h4 data-template-id="agenda-7" class="canva-text font-medium mt-1"></h4>
+     </div>
+     <div class="relative pl-8 fade-in">
+      <div class="timeline-dot"></div>
+      <p class="text-aws-blue font-medium text-sm">12:30 PM</p>
+      <h4 data-template-id="agenda-8" class="canva-text font-medium mt-1"></h4>
+     </div>
+     <div class="relative pl-8 fade-in">
+      <div class="timeline-dot"></div>
+      <p class="text-aws-blue font-medium text-sm">01:00 PM</p>
+      <h4 data-template-id="agenda-9" class="canva-text font-medium mt-1"></h4>
+     </div>
+     <div class="relative pl-8 fade-in">
+      <div class="timeline-dot"></div>
+      <p class="text-aws-blue font-medium text-sm">01:30 PM</p>
+      <h4 data-template-id="agenda-10" class="canva-text font-medium mt-1"></h4>
+     </div>
+     <div class="relative pl-8 fade-in">
+      <div class="timeline-dot"></div>
+      <p class="text-aws-blue font-medium text-sm">02:30 PM</p>
+      <h4 data-template-id="agenda-11" class="canva-text font-medium mt-1"></h4>
+     </div>
+     <div class="relative pl-8 fade-in">
+      <div class="timeline-dot"></div>
+      <p class="text-aws-blue font-medium text-sm">03:00 PM</p>
+      <h4 data-template-id="agenda-12" class="canva-text font-medium mt-1"></h4>
+     </div>
+    </div>
+   </div>
+  </section>
+  <section id="speakers" class="w-full py-24 px-4">
+   <div class="max-w-6xl mx-auto">
+    <h2 data-template-id="speakers-title" class="canva-text font-bold text-center fade-in"></h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
+     <div class="glass rounded-2xl p-6 text-center fade-in hover:border-aws-blue/20 transition">
+      <div class="w-24 h-24 rounded-full mx-auto bg-surface-border flex items-center justify-center">
+       <i data-lucide="user" style="width:40px;height:40px;color:#2196F3"></i>
+      </div>
+      <h3 data-template-id="speaker-1-name" class="canva-text font-semibold mt-4"></h3>
+      <p data-template-id="speaker-1-role" class="canva-text text-sm mt-1"></p>
+     </div>
+     <div class="glass rounded-2xl p-6 text-center fade-in hover:border-aws-blue/20 transition">
+      <div class="w-24 h-24 rounded-full mx-auto bg-surface-border flex items-center justify-center">
+       <i data-lucide="user" style="width:40px;height:40px;color:#2196F3"></i>
+      </div>
+      <h3 data-template-id="speaker-2-name" class="canva-text font-semibold mt-4"></h3>
+      <p data-template-id="speaker-2-role" class="canva-text text-sm mt-1"></p>
+     </div>
+     <div class="glass rounded-2xl p-6 text-center fade-in hover:border-aws-blue/20 transition">
+      <div class="w-24 h-24 rounded-full mx-auto bg-surface-border flex items-center justify-center">
+       <i data-lucide="user" style="width:40px;height:40px;color:#2196F3"></i>
+      </div>
+      <h3 data-template-id="speaker-3-name" class="canva-text font-semibold mt-4"></h3>
+      <p data-template-id="speaker-3-role" class="canva-text text-sm mt-1"></p>
+     </div>
+     <div class="glass rounded-2xl p-6 text-center fade-in hover:border-aws-blue/20 transition">
+      <div class="w-24 h-24 rounded-full mx-auto bg-surface-border flex items-center justify-center">
+       <i data-lucide="user" style="width:40px;height:40px;color:#2196F3"></i>
+      </div>
+      <h3 data-template-id="speaker-4-name" class="canva-text font-semibold mt-4"></h3>
+      <p data-template-id="speaker-4-role" class="canva-text text-sm mt-1"></p>
+     </div>
+     <div class="glass rounded-2xl p-6 text-center fade-in hover:border-aws-blue/20 transition">
+      <div class="w-24 h-24 rounded-full mx-auto bg-surface-border flex items-center justify-center">
+       <i data-lucide="user" style="width:40px;height:40px;color:#2196F3"></i>
+      </div>
+      <h3 data-template-id="speaker-5-name" class="canva-text font-semibold mt-4"></h3>
+      <p data-template-id="speaker-5-role" class="canva-text text-sm mt-1"></p>
+     </div>
+    </div>
+   </div>
+  </section>
+  <section id="partners" class="w-full py-24 px-4">
+   <div class="max-w-6xl mx-auto text-center">
+    <h2 data-template-id="partners-title" class="canva-text font-bold fade-in"></h2>
+    <div class="flex flex-wrap justify-center gap-6 mt-16">
+     <div class="glass rounded-xl w-28 h-14 flex items-center justify-center text-gray-500 text-xs fade-in">
+      Logo
+     </div>
+     <div class="glass rounded-xl w-28 h-14 flex items-center justify-center text-gray-500 text-xs fade-in">
+      Logo
+     </div>
+     <div class="glass rounded-xl w-28 h-14 flex items-center justify-center text-gray-500 text-xs fade-in">
+      Logo
+     </div>
+     <div class="glass rounded-xl w-28 h-14 flex items-center justify-center text-gray-500 text-xs fade-in">
+      Logo
+     </div>
+     <div class="glass rounded-xl w-28 h-14 flex items-center justify-center text-gray-500 text-xs fade-in">
+      Logo
+     </div>
+     <div class="glass rounded-xl w-28 h-14 flex items-center justify-center text-gray-500 text-xs fade-in">
+      Logo
+     </div>
+    </div>
+   </div>
+  </section>
+  <section id="venue" class="w-full py-24 px-4">
+   <div class="max-w-6xl mx-auto">
+    <h2 data-template-id="venue-title" class="canva-text font-bold text-center fade-in"></h2>
+    <div class="mt-16 grid grid-cols-1 lg:grid-cols-2 gap-8">
+     <div class="fade-in flex items-center justify-center">
+      <img data-template-id="venue-img" class="canva-image w-full h-64 object-contain" loading="lazy">
+     </div>
+     <div class="glass rounded-2xl p-8 fade-in">
+      <h3 data-template-id="venue-name" class="canva-text font-bold text-xl"></h3>
+      <p data-template-id="venue-address" class="canva-text mt-2 text-gray-400"></p>
+      <div class="flex flex-wrap gap-3 mt-6">
+       <span class="glass px-3 py-1 rounded-full text-xs">🅿️ Parking</span> <span class="glass px-3 py-1 rounded-full text-xs">🕌 Prayer Area</span> <span class="glass px-3 py-1 rounded-full text-xs">📶 WiFi</span> <span class="glass px-3 py-1 rounded-full text-xs">🍽️ Food</span> <span class="glass px-3 py-1 rounded-full text-xs">♿ Accessible</span>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <section id="faq" class="w-full py-24 px-4">
+   <div class="max-w-3xl mx-auto">
+    <h2 data-template-id="faq-title" class="canva-text font-bold text-center fade-in"></h2>
+    <div class="mt-12 space-y-4">
+     <div class="glass rounded-xl fade-in">
+      <button class="accordion-btn w-full px-6 py-4 text-left flex justify-between items-center" aria-expanded="false"><span data-template-id="faq-1-q" class="canva-text font-medium"></span><i data-lucide="chevron-down" style="width:20px;height:20px" class="transition-transform"></i></button>
+      <div class="accordion-content px-6 pb-4">
+       <p data-template-id="faq-1-a" class="canva-text text-gray-400"></p>
+      </div>
+     </div>
+     <div class="glass rounded-xl fade-in">
+      <button class="accordion-btn w-full px-6 py-4 text-left flex justify-between items-center" aria-expanded="false"><span data-template-id="faq-3-q" class="canva-text font-medium"></span><i data-lucide="chevron-down" style="width:20px;height:20px" class="transition-transform"></i></button>
+      <div class="accordion-content px-6 pb-4">
+       <p data-template-id="faq-3-a" class="canva-text text-gray-400"></p>
+      </div>
+     </div>
+     <div class="glass rounded-xl fade-in">
+      <button class="accordion-btn w-full px-6 py-4 text-left flex justify-between items-center" aria-expanded="false"><span data-template-id="faq-4-q" class="canva-text font-medium"></span><i data-lucide="chevron-down" style="width:20px;height:20px" class="transition-transform"></i></button>
+      <div class="accordion-content px-6 pb-4">
+       <p data-template-id="faq-4-a" class="canva-text text-gray-400"></p>
+      </div>
+     </div>
+     <div class="glass rounded-xl fade-in">
+      <button class="accordion-btn w-full px-6 py-4 text-left flex justify-between items-center" aria-expanded="false"><span data-template-id="faq-5-q" class="canva-text font-medium"></span><i data-lucide="chevron-down" style="width:20px;height:20px" class="transition-transform"></i></button>
+      <div class="accordion-content px-6 pb-4">
+       <p data-template-id="faq-5-a" class="canva-text text-gray-400"></p>
+      </div>
+     </div>
+     <div class="glass rounded-xl fade-in">
+      <button class="accordion-btn w-full px-6 py-4 text-left flex justify-between items-center" aria-expanded="false"><span data-template-id="faq-6-q" class="canva-text font-medium"></span><i data-lucide="chevron-down" style="width:20px;height:20px" class="transition-transform"></i></button>
+      <div class="accordion-content px-6 pb-4">
+       <p data-template-id="faq-6-a" class="canva-text text-gray-400"></p>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <section class="w-full py-24 px-4">
+   <div class="max-w-2xl mx-auto text-center fade-in">
+    <h2 data-template-id="register-title" class="canva-text font-bold"></h2>
+    <p data-template-id="register-desc" class="canva-text text-center mt-4 text-gray-400"></p><a href="https://linktr.ee/_aitezaz" target="_blank" rel="noopener noreferrer" data-template-id="register-btn" class="canva-button inline-block mt-8 px-10 py-4 rounded-full font-bold text-xl transition hover:scale-105"></a>
+   </div>
+  </section>
+  <footer data-template-id="footer-section" class="canva-footer w-full py-16 px-4 border-t border-surface-border">
+   <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
+    <div>
+     <h3 data-template-id="footer-brand" class="canva-text font-bold text-lg"></h3>
+     <p data-template-id="footer-tagline" class="canva-text mt-2 text-gray-400 text-sm"></p>
+     <div class="flex gap-4 mt-4">
+      <a href="https://www.linkedin.com/company/canva-student-community-uoh/posts/?viewAsMember=true" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-aws-blue transition"><i data-lucide="linkedin" style="width:20px;height:20px"></i></a> <a href="https://www.instagram.com/canvastudentcommunityuoh?igsh=MXg5cThhNTI4cmw1aw==" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-aws-blue transition"><i data-lucide="instagram" style="width:20px;height:20px"></i></a>
+     </div>
+    </div>
+    <div>
+     <h4 data-template-id="footer-links-title" class="canva-text font-semibold mb-4"></h4>
+     <div class="space-y-2 text-sm text-gray-400">
+      <a href="#about" class="block hover:text-aws-blue">About</a> <a href="#agenda" class="block hover:text-aws-blue">Agenda</a> <a href="#speakers" class="block hover:text-aws-blue">Speakers</a> <a href="#faq" class="block hover:text-aws-blue">FAQ</a>
+     </div>
+    </div>
+    <div>
+     <h4 data-template-id="footer-contact-title" class="canva-text font-semibold mb-4"></h4>
+     <p data-template-id="footer-email" class="canva-text text-sm text-gray-400"></p>
+     <p data-template-id="footer-phone" class="canva-text text-sm text-gray-400 mt-1"></p>
+     <p data-template-id="footer-address" class="canva-text text-sm text-gray-400 mt-1"></p>
+    </div>
+   </div>
+   <div class="max-w-6xl mx-auto mt-12 pt-8 border-t border-surface-border flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
+    <p data-template-id="footer-copyright" class="canva-text"></p>
+    <p data-template-id="footer-love" class="canva-text mt-2 md:mt-0"></p>
+   </div>
+  </footer><button id="back-to-top" class="fixed bottom-6 right-6 w-12 h-12 bg-aws-blue rounded-full flex items-center justify-center shadow-lg opacity-0 pointer-events-none transition-opacity z-50 hover:scale-110" aria-label="Back to top"><i data-lucide="chevron-up" style="width:24px;height:24px;color:#0D1117"></i></button>
+  <script src="/_sdk/afc2d393c2ac926b.editing_sdk.js" integrity="sha512-Ue7lZoRec1IGq7j3H/38aWZalTxanTjFGoCKdWTFUGFJwCO6Pinekpb6vP1nEQ3ZFuEOglmaFKfrRMeLheTxnw=="></script>
+  <script>
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', e => {
+    e.preventDefault();
+    const target = document.querySelector(a.getAttribute('href'));
+    if (target) target.scrollIntoView({ behavior: 'smooth' });
+    document.getElementById('mobile-nav').classList.add('hidden');
+  });
+});
+document.getElementById('mobile-menu-btn').addEventListener('click', () => {
+  document.getElementById('mobile-nav').classList.toggle('hidden');
+});
+window.addEventListener('scroll', () => {
+  const nav = document.getElementById('navbar');
+  if (window.scrollY > 50) nav.classList.add('nav-solid');
+  else nav.classList.remove('nav-solid');
+  const btn = document.getElementById('back-to-top');
+  if (window.scrollY > 400) { btn.classList.remove('opacity-0','pointer-events-none'); }
+  else { btn.classList.add('opacity-0','pointer-events-none'); }
+});
+document.getElementById('back-to-top').addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+const obs = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } });
+}, { threshold: 0.1 });
+document.querySelectorAll('.fade-in').forEach(el => obs.observe(el));
+const counterObs = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      const el = e.target; const target = +el.dataset.target; let current = 0;
+      const step = Math.ceil(target / 40);
+      const timer = setInterval(() => { current += step; if (current >= target) { current = target; clearInterval(timer); } el.textContent = current; }, 30);
+      counterObs.unobserve(el);
+    }
+  });
+}, { threshold: 0.5 });
+document.querySelectorAll('.counter').forEach(el => counterObs.observe(el));
+document.querySelectorAll('.accordion-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const content = btn.nextElementSibling;
+    const expanded = content.classList.toggle('open');
+    btn.setAttribute('aria-expanded', expanded);
+    btn.querySelector('i, svg').style.transform = expanded ? 'rotate(180deg)' : '';
+  });
+});
+const eventDate = new Date('2026-10-07T09:00:00+05:00');
+function updateCountdown() {
+  const diff = eventDate - new Date(); if (diff <= 0) return;
+  const d = Math.floor(diff / 86400000); const h = Math.floor((diff % 86400000) / 3600000);
+  const m = Math.floor((diff % 3600000) / 60000); const s = Math.floor((diff % 60000) / 1000);
+  document.getElementById('cd-days').textContent = String(d).padStart(2,'0');
+  document.getElementById('cd-hours').textContent = String(h).padStart(2,'0');
+  document.getElementById('cd-mins').textContent = String(m).padStart(2,'0');
+  document.getElementById('cd-secs').textContent = String(s).padStart(2,'0');
+}
+updateCountdown(); setInterval(updateCountdown, 1000);
+lucide.createIcons();
+  </script>
+ </body>
+</html>
