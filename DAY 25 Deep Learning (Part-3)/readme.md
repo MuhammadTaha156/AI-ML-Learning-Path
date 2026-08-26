@@ -1,9 +1,9 @@
 # Deep Learning (Part 3): Building & Training ANNs with PyTorch
 
 
-Project 1: ANN for Regression (Power Plant Dataset)
-Objective
-Predict the Energy Output (PE) of a power plant based on four input features:
+## Project 1: ANN for Regression (Power Plant Dataset)
+### Objective
+#### Predict the Energy Output (PE) of a power plant based on four input features:
 
 AT: Temperature
 
@@ -24,14 +24,14 @@ Define ANN model
 
 Train the model (and Save the best model)
 
-Evaluate
+### Evaluate
 
 Key Concepts (From Notes)
 Tensor Reshaping: Target variable (y_train) is reshaped to (n, 1) using .view(-1, 1) so that it matches the output shape of the network.
 
 Tensor Dimensions: 1D (scalar), 2D (matrix/vector), 3D, and 4D+ (tensors).
 
-Architecture:
+### Architecture:
 
 Input Layer (4 features)
 
@@ -41,9 +41,10 @@ Output Layer (1 neuron)
 
 Activation Function: ReLU
 
-Batching: Mini-batch Gradient Descent is used. TensorDataset aligns features and targets, while DataLoader automatically creates batches (e.g., batch size = 32) and shuffles the data.
+### Batching: 
+Mini-batch Gradient Descent is used. TensorDataset aligns features and targets, while DataLoader automatically creates batches (e.g., batch size = 32) and shuffles the data.
 
-Training Loop:
+### Training Loop:
 
 Compute forward pass (output = model(xb))
 
@@ -59,8 +60,7 @@ Saving the Model: The model weights are saved (torch.save) when validation loss 
 
 Evaluation: Training MSE, Testing MSE, and R² Score (r2_score).
 
-Code Snippet (ANN_Regression.ipynb)
-python
+
 # Model Definition
 class ANN(nn.Module):
     def __init__(self):
